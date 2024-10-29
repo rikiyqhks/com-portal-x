@@ -1,0 +1,418 @@
+[
+  {
+    "academicYear": "2025",
+    "firstSemester": [],
+    "lastSemester": []
+  },
+  {
+    "academicYear": "2024",
+    "firstSemester": [
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾑ基礎2",
+        "instructor": "竹巻 裕也",
+        "credits": 4.0,
+        "class": 36,
+        "absence": 12,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "プログラミングⅣ",
+        "instructor": "リバティ・フィッシュ(株)",
+        "credits": 4.0,
+        "class": 36,
+        "absence": 4,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "エンジニアリング",
+        "instructor": "中島 宏",
+        "credits": 4.0,
+        "class": 30,
+        "absence": 12,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "プログラム演習Ⅲ",
+        "instructor": "谷口 正宗",
+        "credits": 4.0,
+        "class": 32,
+        "absence": 4,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "ビジネストレーニング",
+        "instructor": "織田 美代子",
+        "credits": 4.0,
+        "class": 36,
+        "absence": 8,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "ポートフォリオ",
+        "instructor": "辻井 友希",
+        "credits": 4.0,
+        "class": 26,
+        "absence": 2,
+        "gradeRating": "-"
+      }
+    ],
+    "lastSemester": [
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾑ基礎2",
+        "instructor": "竹巻 裕也",
+        "credits": 4.0,
+        "class": 0,
+        "absence": 0,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "プログラミングⅣ",
+        "instructor": "リバティ・フィッシュ(株)",
+        "credits": 4.0,
+        "class": 0,
+        "absence": 0,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "エンジニアリング",
+        "instructor": "中島 宏",
+        "credits": 4.0,
+        "class": 0,
+        "absence": 0,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "プログラム演習Ⅲ",
+        "instructor": "谷口 正宗",
+        "credits": 4.0,
+        "class": 0,
+        "absence": 0,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "ビジネストレーニング",
+        "instructor": "織田 美代子",
+        "credits": 4.0,
+        "class": 0,
+        "absence": 0,
+        "gradeRating": "-"
+      },
+      {
+        "subjectName": "ポートフォリオ",
+        "instructor": "辻井 友希",
+        "credits": 4.0,
+        "class": 0,
+        "absence": 0,
+        "gradeRating": "-"
+      }
+    ]
+  },
+  {
+    "academicYear": "2023",
+    "firstSemester": [
+      {
+        "subjectName": "クラウド演習",
+        "instructor": "谷口 正宗",
+        "credits": 4.0,
+        "class": 34,
+        "absence": 0,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞⅢ",
+        "instructor": "山本 誠之",
+        "credits": 6.0,
+        "class": 54,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "就職対策",
+        "instructor": "(株)アイデム",
+        "credits": 2.0,
+        "class": 9,
+        "absence": 0,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "システム開発",
+        "instructor": "織田 美代子",
+        "credits": 4.0,
+        "class": 32,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "セキュリティ演習Ⅱ",
+        "instructor": "(株)ITｸﾞﾛｰﾊﾞﾙﾌﾞﾚｲﾝ",
+        "credits": 4.0,
+        "class": 36,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "データ管理",
+        "instructor": "レバテック(株)",
+        "credits": 6.0,
+        "class": 45,
+        "absence": 0,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "IT基礎Ⅱ",
+        "instructor": "木元 勝永",
+        "credits": 4.0,
+        "class": 32,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "データベースⅡ",
+        "instructor": "谷口 正宗",
+        "credits": 2.0,
+        "class": 18,
+        "absence": 0,
+        "gradeRating": "B"
+      }
+    ],
+    "lastSemester": [
+      {
+        "subjectName": "クラウド演習",
+        "instructor": "谷口 正宗",
+        "credits": 4.0,
+        "class": 34,
+        "absence": 0,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞⅢ",
+        "instructor": "山本 誠之",
+        "credits": 6.0,
+        "class": 54,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "就職対策",
+        "instructor": "(株)アイデム",
+        "credits": 2.0,
+        "class": 9,
+        "absence": 0,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "システム開発",
+        "instructor": "織田 美代子",
+        "credits": 4.0,
+        "class": 32,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "セキュリティ演習Ⅱ",
+        "instructor": "(株)ITｸﾞﾛｰﾊﾞﾙﾌﾞﾚｲﾝ",
+        "credits": 4.0,
+        "class": 36,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "データ管理",
+        "instructor": "レバテック(株)",
+        "credits": 6.0,
+        "class": 45,
+        "absence": 0,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "IT基礎Ⅱ",
+        "instructor": "木元 勝永",
+        "credits": 4.0,
+        "class": 32,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "データベースⅡ",
+        "instructor": "谷口 正宗",
+        "credits": 2.0,
+        "class": 18,
+        "absence": 0,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "進級制作",
+        "instructor": "丸山 克樹",
+        "credits": 6.0,
+        "class": 1,
+        "absence": 0,
+        "gradeRating": "認"
+      }
+    ]
+  },
+  {
+    "academicYear": "2022",
+    "firstSemester": [
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞ2",
+        "instructor": "神田 功一",
+        "credits": 16.0,
+        "class": 112,
+        "absence": 11,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "ｾｷｭﾘﾃｨ演習",
+        "instructor": "(株)ITｸﾞﾛｰﾊﾞﾙﾌﾞﾚｲﾝ",
+        "credits": 12.0,
+        "class": 96,
+        "absence": 13,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾑ実装2",
+        "instructor": "山本 誠之",
+        "credits": 12.0,
+        "class": 99,
+        "absence": 13,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "クラウド概論",
+        "instructor": "長井 謙友",
+        "credits": 12.0,
+        "class": 99,
+        "absence": 5,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "LINUX基礎",
+        "instructor": "小島 大吾",
+        "credits": 8.0,
+        "class": 66,
+        "absence": 14,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "データベース",
+        "instructor": "長石 智保",
+        "credits": 4.0,
+        "class": 33,
+        "absence": 7,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "進級制作",
+        "instructor": "丸山 克樹",
+        "credits": 4.0,
+        "class": 1,
+        "absence": 0,
+        "gradeRating": "認"
+      }
+    ],
+    "lastSemester": []
+  },
+  {
+    "academicYear": "2021",
+    "firstSemester": [
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞ",
+        "instructor": "織田 美代子",
+        "credits": 16.0,
+        "class": 122,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "ﾈｯﾄﾜｰｸ基礎",
+        "instructor": "好川 佳子",
+        "credits": 8.0,
+        "class": 63,
+        "absence": 1,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "ﾌﾟﾛｸﾞﾗﾑ実装",
+        "instructor": "木元 勝永",
+        "credits": 16.0,
+        "class": 129,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "法学",
+        "instructor": "(有)プライムクラフ",
+        "credits": 4.0,
+        "class": 30,
+        "absence": 3,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "ﾈｯﾄﾜｰｸ概論",
+        "instructor": "VISTA ARTS",
+        "credits": 8.0,
+        "class": 61,
+        "absence": 2,
+        "gradeRating": "B"
+      },
+      {
+        "subjectName": "IT概論",
+        "instructor": "神田 功一",
+        "credits": 4.0,
+        "class": 31,
+        "absence": 0,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "ｸﾞﾛｰﾊﾞﾙｺﾐｭﾆｹｰｼｮﾝ(中級)",
+        "instructor": "(株)国際教育社",
+        "credits": 8.0,
+        "class": 57,
+        "absence": 1,
+        "gradeRating": "A"
+      },
+      {
+        "subjectName": "ｷｬﾘｱﾌﾟﾛｸﾞﾗﾑ",
+        "instructor": "丸山 克樹",
+        "credits": 2.0,
+        "class": 1,
+        "absence": 0,
+        "gradeRating": "S"
+      },
+      {
+        "subjectName": "進級制作",
+        "instructor": "丸山 克樹",
+        "credits": 4.0,
+        "class": 1,
+        "absence": 0,
+        "gradeRating": "S"
+      },
+      {
+        "subjectName": "特別講義",
+        "instructor": "丸山 克樹",
+        "credits": 1.0,
+        "class": 1,
+        "absence": 1,
+        "gradeRating": "U"
+      },
+      {
+        "subjectName": "ｺﾐｭﾆｹｰｼｮﾝｽｷﾙｱｯﾌﾟ",
+        "instructor": "丸山 克樹",
+        "credits": 2.0,
+        "class": 1,
+        "absence": 0,
+        "gradeRating": "S"
+      }
+    ],
+    "lastSemester": [
+      {
+        "subjectName": "ｸﾞﾛｰﾊﾞﾙｺﾐｭﾆｹｰｼｮﾝ(中級)",
+        "instructor": "(株)国際教育社",
+        "credits": 8.0,
+        "class": 58,
+        "absence": 21,
+        "gradeRating": "D"
+      }
+    ]
+  }
+]

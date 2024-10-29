@@ -1,0 +1,22 @@
+[
+  {
+    "semester": "前期",
+    "data": {
+      "attendance": 121,
+      "officialAbsence": 32,
+      "absence": 42,
+      "lateness": 1,
+      "early": 0 
+    }
+  },
+  {
+    "semester": "後期",
+    "data": {
+      "attendance": 5,
+      "officialAbsence": 4,
+      "absence": 5,
+      "lateness": 0,
+      "early": 0 
+    }
+  }
+]
