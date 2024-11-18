@@ -10,6 +10,7 @@ import dummyCourse from '@/app/data/dummyCourse.json'
 
 // コースの子配列の型指定
 type Course = {
+  subjectID: number
   subjectName: string
   instructor: string
   credits: number
@@ -230,7 +231,7 @@ const Attendance_Sheet = () => {
                     <Link
                       className='w-16 md:w-32 flex flex-row justify-center items-center gap-1 md:gap-2 text-[9px] md:text-xs
                         mx-auto px-2 md:px-5 py-2 md:py-3 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 duration-200 shadow hover:shadow-md'
-                      href='#'
+                      href={`/attendance_sheet/${course.subjectID}`}
                     >
                       <Image
                         className='w-4 md:w-6'

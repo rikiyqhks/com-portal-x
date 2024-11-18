@@ -8,7 +8,7 @@ import Joboffer from '@/public/joboffer.svg'
 import Check from '@/public/check.svg'
 import Application from '@/public/application.svg'
 import Registration from '@/public/registration.svg'
-import Questionary from '@/public/questionary.svg'
+import Survey from '@/public/survey.svg'
 import Wifi from '@/public/wifi.svg'
 import Barcode from '@/public/barcode.svg'
 
@@ -51,44 +51,6 @@ export default function Home() {
         >
           メニューの「メール」ボタンをタップしてもメール画面が開かない方へ
         </Link>
-      </section>
-      {/* お知らせ */}
-      <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
-        <h1 className='text-xl font-thin'>未読お知らせ(0)</h1>
-        <div className='w-auto h-40 flex flex-col justify-between border border-slate-200 rounded-md shadow-md p-5'>
-          <p className='text-sm'>未読のお知らせはまだありません</p>
-          <Link
-            className='flex flex-row justify-end items-center text-sm font-bold hover:underline'
-            href='/notifications'
-          >
-            お知らせ一覧へ
-          </Link>
-        </div>
-      </section>
-      {/* 出席率 */}
-      <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
-        <h1 className='text-xl font-thin'>出席率</h1>
-        <div className='w-auto h-68 flex flex-col justify-between border border-slate-200 rounded-md shadow-md p-5'>
-          <section className='flex flex-row justify-between items-center px-8 md:px-28 py-3'>
-            <p className='text-md font-semibold md:text-lg md:font-bold'>2025年度</p>
-            <p className='text-xl font-semibold md:text-3xl md:font-bold'>78.2%</p>
-          </section>
-          <section className='flex flex-row justify-between items-center px-8 md:px-28 py-3'>
-            <p className='text-md font-semibold md:text-lg md:font-bold'>前期</p>
-            <p className='text-xl font-semibold md:text-3xl md:font-bold'>78.6%</p>
-          </section>
-          <section className='flex flex-row justify-between items-center px-8 md:px-28 py-3'>
-            <p className='text-md font-semibold md:text-lg md:font-bold'>後期</p>
-            <p className='text-xl font-semibold md:text-3xl md:font-bold'>70.0%</p>
-          </section>
-          <hr className='my-5' />
-          <Link
-            className='flex flex-row justify-end items-center text-xs font-semibold md:text-sm md:font-bold hover:underline'
-            href='/attendance_rate_detail'
-          >
-            出席状況詳細一覧へ
-          </Link>
-        </div>
       </section>
       {/* COM Portal メニュー */}
       <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
@@ -169,7 +131,7 @@ export default function Home() {
             href='/'
           >
             <Image
-              src={Questionary}
+              src={Survey}
               width={40}
               alt='アンケート'
             />
@@ -199,10 +161,48 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      {/* お知らせ */}
+      <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
+        <h1 className='text-xl font-thin'>未読お知らせ(0)</h1>
+        <div className='w-auto h-40 flex flex-col justify-between border border-slate-200 rounded-md shadow-md p-5'>
+          <p className='text-sm'>未読のお知らせはまだありません</p>
+          <Link
+            className='flex flex-row justify-end items-center text-sm font-bold hover:underline'
+            href='/notifications'
+          >
+            お知らせ一覧へ
+          </Link>
+        </div>
+      </section>
+      {/* 出席率 */}
+      <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
+        <h1 className='text-xl font-thin'>出席率</h1>
+        <div className='w-auto h-68 flex flex-col justify-between border border-slate-200 rounded-md shadow-md p-5'>
+          <section className='flex flex-row justify-between items-center px-8 md:px-28 py-3'>
+            <p className='text-md font-semibold md:text-lg md:font-bold'>2025年度</p>
+            <p className='text-xl font-semibold md:text-3xl md:font-bold'>78.2%</p>
+          </section>
+          <section className='flex flex-row justify-between items-center px-8 md:px-28 py-3'>
+            <p className='text-md font-semibold md:text-lg md:font-bold'>前期</p>
+            <p className='text-xl font-semibold md:text-3xl md:font-bold'>78.6%</p>
+          </section>
+          <section className='flex flex-row justify-between items-center px-8 md:px-28 py-3'>
+            <p className='text-md font-semibold md:text-lg md:font-bold'>後期</p>
+            <p className='text-xl font-semibold md:text-3xl md:font-bold'>70.0%</p>
+          </section>
+          <hr className='my-5' />
+          <Link
+            className='flex flex-row justify-end items-center text-xs font-semibold md:text-sm md:font-bold hover:underline'
+            href='/attendance_rate_detail'
+          >
+            出席状況詳細一覧へ
+          </Link>
+        </div>
+      </section>
       {/* ITリテラシー理解度テスト受験状況 */}
       <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
-        <h1 className='text-md font-thin'>ITリテラシー理解度テスト受験状況</h1>
-        <div className='w-auto flex flex-row justify-between border border-slate-200 rounded-md shadow-md px-10 py-8 md:px-32 md:py-12'>
+        <h1 className='text-md font-thin underline'>ITリテラシー理解度テスト受験状況</h1>
+        <div className='w-auto flex flex-row justify-between border border-amber-300 rounded-md shadow-md px-10 py-8 md:px-32 md:py-12'>
           <p className='text-md font-semibold md:text-lg md:font-bold'>結果</p>
           <p className='text-xl font-semibold md:text-2xl md:font-bold'>未受験</p>
         </div>

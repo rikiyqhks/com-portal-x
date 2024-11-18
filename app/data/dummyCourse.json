@@ -8,6 +8,7 @@
     "academicYear": "2024",
     "firstSemester": [
       {
+        "subjectID": 1,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾑ基礎2",
         "instructor": "竹巻 裕也",
         "credits": 4.0,
@@ -16,6 +17,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 2,
         "subjectName": "プログラミングⅣ",
         "instructor": "リバティ・フィッシュ(株)",
         "credits": 4.0,
@@ -24,6 +26,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 3,
         "subjectName": "エンジニアリング",
         "instructor": "中島 宏",
         "credits": 4.0,
@@ -32,6 +35,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 4,
         "subjectName": "プログラム演習Ⅲ",
         "instructor": "谷口 正宗",
         "credits": 4.0,
@@ -40,6 +44,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 5,
         "subjectName": "ビジネストレーニング",
         "instructor": "織田 美代子",
         "credits": 4.0,
@@ -48,6 +53,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 6,
         "subjectName": "ポートフォリオ",
         "instructor": "辻井 友希",
         "credits": 4.0,
@@ -58,6 +64,7 @@
     ],
     "lastSemester": [
       {
+        "subjectID": 1,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾑ基礎2",
         "instructor": "竹巻 裕也",
         "credits": 4.0,
@@ -66,6 +73,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 2,
         "subjectName": "プログラミングⅣ",
         "instructor": "リバティ・フィッシュ(株)",
         "credits": 4.0,
@@ -74,6 +82,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 3,
         "subjectName": "エンジニアリング",
         "instructor": "中島 宏",
         "credits": 4.0,
@@ -82,6 +91,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 4,
         "subjectName": "プログラム演習Ⅲ",
         "instructor": "谷口 正宗",
         "credits": 4.0,
@@ -90,6 +100,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 5,
         "subjectName": "ビジネストレーニング",
         "instructor": "織田 美代子",
         "credits": 4.0,
@@ -98,6 +109,7 @@
         "gradeRating": "-"
       },
       {
+        "subjectID": 6,
         "subjectName": "ポートフォリオ",
         "instructor": "辻井 友希",
         "credits": 4.0,
@@ -111,6 +123,7 @@
     "academicYear": "2023",
     "firstSemester": [
       {
+        "subjectID": 7,
         "subjectName": "クラウド演習",
         "instructor": "谷口 正宗",
         "credits": 4.0,
@@ -119,6 +132,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 8,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞⅢ",
         "instructor": "山本 誠之",
         "credits": 6.0,
@@ -127,6 +141,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 9,
         "subjectName": "就職対策",
         "instructor": "(株)アイデム",
         "credits": 2.0,
@@ -135,6 +150,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 10,
         "subjectName": "システム開発",
         "instructor": "織田 美代子",
         "credits": 4.0,
@@ -143,6 +159,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 11,
         "subjectName": "セキュリティ演習Ⅱ",
         "instructor": "(株)ITｸﾞﾛｰﾊﾞﾙﾌﾞﾚｲﾝ",
         "credits": 4.0,
@@ -151,6 +168,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 12,
         "subjectName": "データ管理",
         "instructor": "レバテック(株)",
         "credits": 6.0,
@@ -159,6 +177,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 13,
         "subjectName": "IT基礎Ⅱ",
         "instructor": "木元 勝永",
         "credits": 4.0,
@@ -167,6 +186,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 14,
         "subjectName": "データベースⅡ",
         "instructor": "谷口 正宗",
         "credits": 2.0,
@@ -177,6 +197,7 @@
     ],
     "lastSemester": [
       {
+        "subjectID": 7,
         "subjectName": "クラウド演習",
         "instructor": "谷口 正宗",
         "credits": 4.0,
@@ -185,6 +206,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 8,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞⅢ",
         "instructor": "山本 誠之",
         "credits": 6.0,
@@ -193,6 +215,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 9,
         "subjectName": "就職対策",
         "instructor": "(株)アイデム",
         "credits": 2.0,
@@ -201,6 +224,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 10,
         "subjectName": "システム開発",
         "instructor": "織田 美代子",
         "credits": 4.0,
@@ -209,6 +233,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 11,
         "subjectName": "セキュリティ演習Ⅱ",
         "instructor": "(株)ITｸﾞﾛｰﾊﾞﾙﾌﾞﾚｲﾝ",
         "credits": 4.0,
@@ -217,6 +242,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 12,
         "subjectName": "データ管理",
         "instructor": "レバテック(株)",
         "credits": 6.0,
@@ -225,6 +251,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 13,
         "subjectName": "IT基礎Ⅱ",
         "instructor": "木元 勝永",
         "credits": 4.0,
@@ -233,6 +260,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 14,
         "subjectName": "データベースⅡ",
         "instructor": "谷口 正宗",
         "credits": 2.0,
@@ -241,6 +269,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 15,
         "subjectName": "進級制作",
         "instructor": "丸山 克樹",
         "credits": 6.0,
@@ -254,6 +283,7 @@
     "academicYear": "2022",
     "firstSemester": [
       {
+        "subjectID": 16,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞ2",
         "instructor": "神田 功一",
         "credits": 16.0,
@@ -262,6 +292,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 17,
         "subjectName": "ｾｷｭﾘﾃｨ演習",
         "instructor": "(株)ITｸﾞﾛｰﾊﾞﾙﾌﾞﾚｲﾝ",
         "credits": 12.0,
@@ -270,6 +301,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 18,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾑ実装2",
         "instructor": "山本 誠之",
         "credits": 12.0,
@@ -278,6 +310,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 19,
         "subjectName": "クラウド概論",
         "instructor": "長井 謙友",
         "credits": 12.0,
@@ -286,6 +319,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 20,
         "subjectName": "LINUX基礎",
         "instructor": "小島 大吾",
         "credits": 8.0,
@@ -294,6 +328,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 21,
         "subjectName": "データベース",
         "instructor": "長石 智保",
         "credits": 4.0,
@@ -302,6 +337,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 22,
         "subjectName": "進級制作",
         "instructor": "丸山 克樹",
         "credits": 4.0,
@@ -316,6 +352,7 @@
     "academicYear": "2021",
     "firstSemester": [
       {
+        "subjectID": 23,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾐﾝｸﾞ",
         "instructor": "織田 美代子",
         "credits": 16.0,
@@ -324,6 +361,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 24,
         "subjectName": "ﾈｯﾄﾜｰｸ基礎",
         "instructor": "好川 佳子",
         "credits": 8.0,
@@ -332,6 +370,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 25,
         "subjectName": "ﾌﾟﾛｸﾞﾗﾑ実装",
         "instructor": "木元 勝永",
         "credits": 16.0,
@@ -340,6 +379,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 26,
         "subjectName": "法学",
         "instructor": "(有)プライムクラフ",
         "credits": 4.0,
@@ -348,6 +388,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 27,
         "subjectName": "ﾈｯﾄﾜｰｸ概論",
         "instructor": "VISTA ARTS",
         "credits": 8.0,
@@ -356,6 +397,7 @@
         "gradeRating": "B"
       },
       {
+        "subjectID": 28,
         "subjectName": "IT概論",
         "instructor": "神田 功一",
         "credits": 4.0,
@@ -364,6 +406,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 29,
         "subjectName": "ｸﾞﾛｰﾊﾞﾙｺﾐｭﾆｹｰｼｮﾝ(中級)",
         "instructor": "(株)国際教育社",
         "credits": 8.0,
@@ -372,6 +415,7 @@
         "gradeRating": "A"
       },
       {
+        "subjectID": 30,
         "subjectName": "ｷｬﾘｱﾌﾟﾛｸﾞﾗﾑ",
         "instructor": "丸山 克樹",
         "credits": 2.0,
@@ -380,6 +424,7 @@
         "gradeRating": "S"
       },
       {
+        "subjectID": 31,
         "subjectName": "進級制作",
         "instructor": "丸山 克樹",
         "credits": 4.0,
@@ -388,6 +433,7 @@
         "gradeRating": "S"
       },
       {
+        "subjectID": 32,
         "subjectName": "特別講義",
         "instructor": "丸山 克樹",
         "credits": 1.0,
@@ -396,6 +442,7 @@
         "gradeRating": "U"
       },
       {
+        "subjectID": 33,
         "subjectName": "ｺﾐｭﾆｹｰｼｮﾝｽｷﾙｱｯﾌﾟ",
         "instructor": "丸山 克樹",
         "credits": 2.0,
@@ -406,6 +453,7 @@
     ],
     "lastSemester": [
       {
+        "subjectID": 34,
         "subjectName": "ｸﾞﾛｰﾊﾞﾙｺﾐｭﾆｹｰｼｮﾝ(中級)",
         "instructor": "(株)国際教育社",
         "credits": 8.0,
