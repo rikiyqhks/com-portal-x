@@ -14,11 +14,11 @@ const Course_Registration = () => {
   // メインコンテンツ
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>
-      <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
-        <h1 className='text-2xl font-thin'>履修登録</h1>
+      <section className='flex flex-col justify-center items-center gap-4 px-4 py-2'>
+        <caption className='text-2xl font-thin'>履修登録</caption>
         <section className='flex flex-col justify-center items-center md:justify-start md:items-start'>
           {/* テーブルコンテンツ 1つめ */}
-          <table className='w-full table-fixed text-[9px] md:text-xs text-center'>
+          <table className='w-[1000px] h-[120px] table-fixed text-[9px] md:text-xs text-center'>
             <thead>
               <tr className='bg-amber-400'>
                 <th className='w-20 px-5 py-1 md:w-40 md:px-7 md:py-3'>氏名</th>
@@ -37,7 +37,7 @@ const Course_Registration = () => {
             </tbody>
           </table>
           {/* テーブルコンテンツ 2つめ */}
-          <table className='w-full table-fixed text-[9px] md:text-xs text-center'>
+          <table className='w-[1000px] h-[120px] table-fixed text-[9px] md:text-xs text-center'>
             <thead>
               <tr className='bg-amber-400'>
                 <th className='w-44 px-3 py-1 md:w-40 md:px-7 md:py-3'>年度・学期</th>
@@ -54,7 +54,7 @@ const Course_Registration = () => {
         </section>
         <section className='flex flex-col overflow-x-scroll md:overflow-x-visible justify-start md:justify-center items-start md:items-center'>
           {/* テーブルコンテンツ 履修登録 */}
-          <table className='w-full table-fixed text-[9px] md:text-xs text-center border-2'>
+          <table className='w-[1400px] h-[800px] table-fixed text-[9px] md:text-xs text-center border-2'>
             <caption className='text-start py-1 md:hidden'>※横スクロールして全体を確認して下さい。</caption>
             <thead>
               {/* 1列目 */}
@@ -96,14 +96,14 @@ const Course_Registration = () => {
                 <td className='px-7 border-2 py-3'></td>
                 <td className='px-7 border-2 py-3'></td>
                 <td className='bg-sky-200 px-7 border-2 py-3'>
-                  Webアプリ開発（選択）<br />鳥飼先生<br /><br />AIルーム
+                  Webアプリ開発（選択）<br />鳥飼先生<br /><br />AIルーム<br />
                   <span className='inline-block my-5'>
-                    <label htmlFor='web-app-checkbox' className='w-full py-3 text-[9px] md:text-xs text-slate-900 cursor-pointer'>
+                    <label htmlFor='web-app-checkbox' className='w-full flex md:block flex-col py-3 text-[9px] md:text-xs text-slate-900 cursor-pointer'>
                       <input
                         id='web-app-checkbox'
                         type='checkbox'
                         checked={selected[2]}
-                        className='align-middle text-blue-600 bg-slate-300 border-2-slate-300 rounded focus:ring-blue-500 focus:ring-2 cursor-pointer'
+                        className='scale-75 align-middle text-blue-600 bg-slate-300 border-2-slate-300 rounded focus:ring-blue-500 focus:ring-2 cursor-pointer'
                         // 選択したら状態管理変数に真偽値を代入
                         onChange={(e: ChangeEvent<HTMLInputElement>) => {
                           const newSelected = [...selected]
@@ -126,14 +126,14 @@ const Course_Registration = () => {
                 <td className='px-7 border-2 py-3'></td>
                 <td className='bg-sky-200 px-7 border-2 py-3'></td>
                 <td className='bg-sky-200 px-7 border-2 py-3'>
-                  CEH（選択）<br />前田先生<br /><br />AIルーム
+                  CEH（選択）<br />前田先生<br /><br />AIルーム<br />
                   <span className='inline-block my-5'>
-                    <label htmlFor='ceh-2-checkbox' className='w-full py-3 text-[9px] md:text-xs text-slate-900 cursor-pointer'>
+                    <label htmlFor='ceh-2-checkbox' className='w-full flex md:block flex-col py-3 text-[9px] md:text-xs text-slate-900 cursor-pointer'>
                       <input
                         id='ceh-2-checkbox'
                         type='checkbox'
                         checked={selected[3]}
-                        className='align-middle text-blue-600 bg-slate-300 border-2-slate-300 rounded focus:ring-blue-500 focus:ring-2 cursor-pointer'
+                        className='scale-75 align-middle text-blue-600 bg-slate-300 border-2-slate-300 rounded focus:ring-blue-500 focus:ring-2 cursor-pointer'
                         // 選択したら状態管理変数に真偽値を代入
                         onChange={(e: ChangeEvent<HTMLInputElement>) => {
                           const newSelected = [...selected]
@@ -154,14 +154,14 @@ const Course_Registration = () => {
                 <td className='bg-amber-200 px-7 border-2 py-3'>卒業研究<br />辻井先生<br /><br />404A</td>
                 <td className='px-7 border-2 py-3'></td>
                 <td className='bg-sky-200 px-7 border-2 py-3'>
-                  Ruby（選択）<br />リバティ・フィッシュ<br /><br />404A
+                  Ruby（選択）<br />リバティ・フィッシュ<br /><br />404A<br />
                   <span className='inline-block my-5'>
-                    <label htmlFor='ruby-checkbox' className='w-full py-3 text-[9px] md:text-xs text-slate-900 cursor-pointer'>
+                    <label htmlFor='ruby-checkbox' className='w-full flex md:block flex-col py-3 text-[9px] md:text-xs text-slate-900 cursor-pointer'>
                       <input
                         id='ruby-checkbox'
                         type='checkbox'
                         checked={selected[4]}
-                        className='align-middle text-blue-600 bg-slate-300 border-2-slate-300 rounded focus:ring-blue-500 focus:ring-2 cursor-pointer'
+                        className='scale-75 align-middle text-blue-600 bg-slate-300 border-2-slate-300 rounded focus:ring-blue-500 focus:ring-2 cursor-pointer'
                         // 選択したら状態管理変数に真偽値を代入
                         onChange={(e: ChangeEvent<HTMLInputElement>) => {
                           const newSelected = [...selected]
@@ -208,7 +208,7 @@ const Course_Registration = () => {
             </tbody>
           </table>
         </section>
-        <section className='flex flex-row justify-between items-center'>
+        <section className='flex flex-row justify-between items-center gap-20'>
           <button
             className='text-xs md:text-sm px-3 md:px-10 py-3 md:py-4 rounded-xl bg-slate-300 hover:bg-slate-300 border-2 border-2-slate-300 duration-200 shadow hover:shadow-md'
             onClick={() => alert('入力したデータを一時保存しました。')}

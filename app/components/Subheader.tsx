@@ -40,7 +40,11 @@ const Subheader = () => {
           <span className='text-slate-900'>&gt;</span>
           <span className='text-slate-900'>
             {/* ページURLパスの分岐処理 */}
-            {pathname === '/notifications' ? (
+            {pathname === '/profile' ? (
+              'プロフィール'
+            ) : pathname === '/resetPassword' ? (
+              'パスワードの変更'
+            ) : pathname === '/notifications' ? (
               'お知らせ一覧'
             ) : pathname === '/attendance_rate_detail' ? (
               '出席状況詳細一覧'
