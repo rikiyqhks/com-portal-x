@@ -1,5 +1,6 @@
 'use client'
 
+import { NextPage } from 'next'
 import Image from 'next/image'
 import Barcode from '@/public/test_barcode.png'
 import QRcode from '@/public/test_qrcode.png'
@@ -8,7 +9,7 @@ import QRcode from '@/public/test_qrcode.png'
  * ユーザーIDバーコードを表示するページ
  * @returns ユーザーIDバーコード
  */
-const User_Barcode = () => {
+const User_Barcode: NextPage = () => {
   // メインコンテンツ
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>

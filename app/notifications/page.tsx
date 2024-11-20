@@ -1,10 +1,12 @@
 'use client'
 
+import { NextPage } from 'next'
+
 /**
  * お知らせ一覧を表示するページ
  * @returns お知らせ一覧
  */
-const Notifications = () => {
+const Notifications: NextPage = () => {
   // メインコンテンツ
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>

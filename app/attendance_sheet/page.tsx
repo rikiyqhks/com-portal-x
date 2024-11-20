@@ -1,5 +1,6 @@
 'use client'
 
+import { NextPage } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect, ChangeEvent } from 'react'
@@ -30,7 +31,7 @@ type Courses = {
  * 成績と出欠確認ができるページ
  * @returns 成績・出欠確認表
  */
-const Attendance_Sheet = () => {
+const Attendance_Sheet: NextPage = () => {
 
   // コースを状態管理する配列
   const [courses, setCourses] = useState<Course[]>()

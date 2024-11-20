@@ -61,8 +61,10 @@ CREATE TABLE edu_oca.registration(
 CREATE TABLE edu_oca.survey(
   id SERIAL PRIMARY KEY,
   title VARCHAR(1500),
+  contents VARCHAR(2000),
   applicant VARCHAR(1500),
-  deadline TIMESTAMP WITH TIME ZONE
+  deadline TIMESTAMP WITH TIME ZONE,
+  reaction INTEGER
 );
 
 -- 身分上の変更届テーブル（各種申請の子テーブル）の作成

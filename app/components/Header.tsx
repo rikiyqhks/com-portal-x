@@ -1,5 +1,6 @@
 'use client'
 
+import { NextPage } from 'next'
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -9,7 +10,7 @@ import Profile from '@/public/profile.svg'
  * 画面最上部のヘッダーコンポーネント
  * @returns ヘッダー
  */
-const Header = () => {
+const Header: NextPage = () => {
 
   // プロフィールボタンをクリックした際のメニューの状態管理をする変数
   const [open, setOpen] = useState<boolean>(false)
@@ -37,9 +38,15 @@ const Header = () => {
         />
       </button>
       <ul className={`w-40 h-36 flex flex-col absolute top-12 right-8 justify-between items-start bg-white
-        border border-slate-200 rounded shadow-lg text-slate-900 p-5 ${open ? 'opacity-100 duration-200' : 'opacity-0 duration-200'}`}>
+        border border-slate-200 rounded shadow-lg text-slate-900 p-5 duration-200 ${open ? 'visible opacity-100 delay-75' : 'invisible opacity-0'}`}>
         <Link href='/profile'>プロフィール</Link>
-        <Link href='/resetPassword'>パスワード変更</Link>
+        <Link
+          href='https://mysignins.microsoft.com/security-info/password/change'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          パスワード変更
+        </Link>
         <button onClick={() => signout()}>サインアウト</button>
       </ul>
     </header>

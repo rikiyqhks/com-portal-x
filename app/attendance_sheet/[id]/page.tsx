@@ -2,7 +2,7 @@
 
 // import { usePathname } from 'next/navigation'
 
-const page = ({ params }: { params: { id: string } }) => {
+const Course = ({ params }: { params: { id: string } }) => {
   const { id } = params
   // const pathName = usePathname()
 
@@ -11,4 +11,4 @@ const page = ({ params }: { params: { id: string } }) => {
   )
 }
 
-export default page
+export default Course

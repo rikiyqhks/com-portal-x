@@ -1,3 +1,4 @@
+import { NextPage } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Manual from '@/public/manual.svg'
@@ -16,7 +17,7 @@ import Barcode from '@/public/barcode.svg'
  * サイトを開いた際に最初に表示されるホーム画面
  * @returns ホーム画面
  */
-export default function Home() {
+const Home: NextPage = () => {
   // メインコンテンツ
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>  
@@ -128,7 +129,7 @@ export default function Home() {
           </Link>
           <Link
             className='w-24 h-24 flex flex-col justify-center items-center gap-3 hover:bg-slate-100 duration-200 border border-slate-200 rounded shadow p-1'
-            href='/'
+            href='/survey'
           >
             <Image
               src={Survey}
@@ -139,7 +140,7 @@ export default function Home() {
           </Link>
           <Link
             className='w-24 h-24 flex flex-col justify-center items-center gap-3 hover:bg-slate-100 duration-200 border border-slate-200 rounded shadow p-1'
-            href='/'
+            href='/application_wifi'
           >
             <Image
               src={Wifi}
@@ -210,3 +211,5 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home

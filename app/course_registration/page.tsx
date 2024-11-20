@@ -1,12 +1,13 @@
 'use client'
 
+import { NextPage } from 'next'
 import { ChangeEvent, useState } from 'react'
 
 /**
  * 履修登録ができるページ
  * @returns 履修登録
  */
-const Course_Registration = () => {
+const Course_Registration: NextPage = () => {
 
   // 履修科目を選択しているか状態管理する配列
   const [selected, setSelected] = useState<boolean[]>([false, false, false, false])

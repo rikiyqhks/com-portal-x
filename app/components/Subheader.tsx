@@ -1,5 +1,6 @@
 'use client'
 
+import { NextPage } from 'next'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,7 +10,7 @@ import Home from '@/public/home.svg'
  * 画面の上から二番目のサブヘッダーコンポーネント
  * @returns サブヘッダー
  */
-const Subheader = () => {
+const Subheader: NextPage = () => {
 
   // 現在開いているページURLパスを取得
   const pathname = usePathname()
@@ -42,18 +43,20 @@ const Subheader = () => {
             {/* ページURLパスの分岐処理 */}
             {pathname === '/profile' ? (
               'プロフィール'
-            ) : pathname === '/resetPassword' ? (
-              'パスワードの変更'
             ) : pathname === '/notifications' ? (
               'お知らせ一覧'
             ) : pathname === '/attendance_rate_detail' ? (
               '出席状況詳細一覧'
-            ) : pathname === '/course_registration' ? (
-              '履修登録'
-            ) : pathname === '/user_barcode' ? (
-              'ユーザーIDバーコード'
             ) : pathname === '/attendance_sheet' ? (
               '成績・出欠確認表'
+            ) : pathname === '/course_registration' ? (
+              '履修登録'
+            ) : pathname === '/survey' ? (
+              'アンケート'
+            ) : pathname === '/application_wifi' ? (
+              '校内WiFiの利用規約と申請状況'
+            ) : pathname === '/user_barcode' ? (
+              'ユーザーIDバーコード'
             ) : (
               ''
             )}

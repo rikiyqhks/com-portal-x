@@ -1,12 +1,15 @@
 'use client'
 
+import { NextPage } from 'next'
+
+// ダミーデータの読み込み
 import dummyAttendance from '@/app/data/dummyAttendance.json'
 
 /**
  * 出席状況の詳細一覧を確認できるページ
  * @returns 出席状況詳細一覧
  */
-const Attendance_Rate_Detail = () => {
+const Attendance_Rate_Detail: NextPage = () => {
   // メインコンテンツ
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>
