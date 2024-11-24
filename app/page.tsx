@@ -1,6 +1,10 @@
+'use client'
+
 import { NextPage } from 'next'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { getNotifications, NotificationType } from './utils/getNotifications'
 import Manual from '@/public/manual.svg'
 import Attention from '@/public/attention.svg'
 import HP from '@/public/hp.svg'
@@ -18,6 +22,18 @@ import Barcode from '@/public/barcode.svg'
  * @returns ホーム画面
  */
 const Home: NextPage = () => {
+
+  // アンケートを状態管理する配列
+  const [notifications, setNotifications] = useState<NotificationType[]>([])
+
+  /**
+   * データベースから取得したお知らせを
+   * 状態管理変数に代入する
+   */
+  useEffect(() => {
+    setNotifications(getNotifications)
+  }, [])
+
   // メインコンテンツ
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>  
@@ -164,9 +180,20 @@ const Home: NextPage = () => {
       </section>
       {/* お知らせ */}
       <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
-        <h1 className='text-xl font-thin'>未読お知らせ(0)</h1>
+        <h1 className='text-xl font-thin'>お知らせ</h1>
         <div className='w-auto h-40 flex flex-col justify-between border border-slate-200 rounded-md shadow-md p-5'>
-          <p className='text-sm'>未読のお知らせはまだありません</p>
+          <div className='flex flex-col justify-start'>
+            {notifications.length !== 0 ? (
+              <div
+                className='flex flex-col justify-center gap-2'
+              >
+                <h1 className='text-sm md:text-lg font-bold'>{notifications[0].createdAt}</h1>
+                <h1 className='text-sm md:text-lg text-red-400 font-bold'>{notifications[0].title}</h1>
+              </div>
+            ) : (
+              <p>お知らせはありません。</p>
+            )}
+          </div>
           <Link
             className='flex flex-row justify-end items-center text-sm font-bold hover:underline'
             href='/notification'
