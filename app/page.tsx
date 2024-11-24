@@ -169,7 +169,7 @@ const Home: NextPage = () => {
           <p className='text-sm'>未読のお知らせはまだありません</p>
           <Link
             className='flex flex-row justify-end items-center text-sm font-bold hover:underline'
-            href='/notifications'
+            href='/notification'
           >
             お知らせ一覧へ
           </Link>

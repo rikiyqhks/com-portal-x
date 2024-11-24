@@ -28,6 +28,7 @@ CREATE TABLE edu_oca.notification(
   id SERIAL PRIMARY KEY,
   title VARCHAR(1500),
   breakdown VARCHAR(1500),
+  cteatedAt TIMESTAMP WITHOUT TIME ZONE,
   owner VARCHAR(1500)
 );
 
@@ -63,6 +64,7 @@ CREATE TABLE edu_oca.survey(
   title VARCHAR(1500),
   contents VARCHAR(2000),
   applicant VARCHAR(1500),
+  cteatedAt TIMESTAMP WITHOUT TIME ZONE,
   deadline TIMESTAMP WITH TIME ZONE,
   reaction INTEGER
 );

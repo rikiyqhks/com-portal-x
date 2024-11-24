@@ -16,7 +16,7 @@ const Course_Registration: NextPage = () => {
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>
       <section className='flex flex-col justify-center items-center gap-4 px-4 py-2'>
-        <caption className='text-2xl font-thin'>履修登録</caption>
+        <caption className='text-xl md:text-2xl font-thin'>履修登録</caption>
         <section className='flex flex-col justify-center items-center md:justify-start md:items-start'>
           {/* テーブルコンテンツ 1つめ */}
           <table className='w-[1000px] h-[120px] table-fixed text-[9px] md:text-xs text-center'>

@@ -14,9 +14,9 @@ const Attendance_Rate_Detail: NextPage = () => {
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>
       <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
-        <h1 className='text-2xl font-thin'>出席状況詳細一覧</h1>
+        <h1 className='text-xl md:text-2xl font-thin'>出席状況詳細一覧</h1>
         <div className='flex flex-col gap-3 overflow-x-scroll'>
-          <p className='sticky left-0 text-xl mt-5'>期間毎出欠状況</p>
+          <p className='sticky left-0 text-lg md:text-xl mt-5'>期間毎出欠状況</p>
           {/* テーブルコンテンツ 1つめ */}
           <table className='w-full table-fixed text-xs text-center'>
             <thead>
@@ -62,7 +62,7 @@ const Attendance_Rate_Detail: NextPage = () => {
           </table>
         </div>
         <div className='flex flex-col gap-3 overflow-x-scroll'>
-          <p className='sticky left-0 text-xl mt-5'>履修講義毎出欠状況</p>
+          <p className='sticky left-0 text-lg md:text-xl mt-5'>履修講義毎出欠状況</p>
           {/* テーブルコンテンツ 2つめ */}
           <table className='w-full table-fixed text-xs text-center'>
             <thead>

@@ -10,10 +10,10 @@ const Application_WiFi: NextPage = () => {
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>
       <section className='max-w-[300px] w-[300px] md:max-w-[800px] md:w-[800px] flex flex-col gap-4 py-2'>
-        <h1 className='text-2xl font-thin'>校内WiFiの利用規約と申請状況</h1>
+        <h1 className='text-xl md:text-2xl font-thin'>校内WiFiの利用規約と申請状況</h1>
         {/* お知らせ */}
         <section className='max-w-[300px] w-[300px] md:max-w-[800px] md:w-[800px] flex flex-col gap-4 px-4 py-2'>
-          <h1 className='text-xl font-thin'>お知らせ</h1>
+          <h1 className='text-lg md:text-xl font-thin'>お知らせ</h1>
           <div className='w-auto h-auto flex flex-col justify-center border border-slate-200 rounded-md shadow-md p-5'>
             <ul className='text-sm'>
               <li>・携帯端末からcomwifiに接続し、ネットワーク申請を行ってください。</li>
@@ -25,7 +25,7 @@ const Application_WiFi: NextPage = () => {
         </section>
         {/* 利用規約 */}
         <section className='max-w-[300px] w-[300px] md:max-w-[800px] md:w-[800px] flex flex-col gap-4 px-4 py-2'>
-          <h1 className='text-xl font-thin'>利用規約</h1>
+          <h1 className='text-lg md:text-xl font-thin'>利用規約</h1>
           <div className='w-auto h-auto flex flex-col justify-center border border-slate-200 rounded-md shadow-md p-5'>
             <ol className='text-sm'>
               <li>１．基本的事項の遵守としてインターネット利用の一般的なマナーやモラル、及び技術的ルールを遵守して頂きます。</li>
@@ -69,7 +69,7 @@ const Application_WiFi: NextPage = () => {
           />
         </div>
         {/* ボタンの配置 */}
-        <section className='flex flex-row justify-between items-center mx-20'>
+        <section className='flex flex-row justify-between items-center mx-5 md:mx-20'>
           <button
             className='text-xs md:text-sm px-3 md:px-10 py-3 md:py-4 rounded-xl bg-slate-300 hover:bg-slate-300 border-2 border-2-slate-300 duration-200 shadow hover:shadow-md'
             disabled

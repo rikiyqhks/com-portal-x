@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import Home from '@/public/home.svg'
+import Book from '@/public/book.svg'
 
 /**
  * 画面の上から二番目のサブヘッダーコンポーネント
@@ -23,6 +24,24 @@ const Subheader: NextPage = () => {
     // ホーム画面ではサブヘッダーを表示しない
     case '/':
       return null
+    case '/lock':
+      return (
+        <nav className='w-full h-8 md:h-16 flex flex-row justify-end items-center text-xs md:text-sm py-14 md:py-16 px-8 md:px-10'>
+          <Link
+            className='flex flex-row justify-center items-center gap-3 text-gray-500 hover:bg-gray-100 border rounded-lg border-gray-400 p-2 md:p-3 duration-200'
+            href='https://viscomp-prodv3-contents.s3.ap-northeast-1.amazonaws.com/contents/attention/compobook/book/index.html'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <Image
+              src={Book}
+              width={30}
+              alt='COM Portal X のマニュアル'
+            />
+            COM Portal X クロス マニュアル
+          </Link>
+        </nav>
+      )
     default:
       // メインコンテンツ
       return (
@@ -43,7 +62,7 @@ const Subheader: NextPage = () => {
             {/* ページURLパスの分岐処理 */}
             {pathname === '/profile' ? (
               'プロフィール'
-            ) : pathname === '/notifications' ? (
+            ) : pathname === '/notification' ? (
               'お知らせ一覧'
             ) : pathname === '/attendance_rate_detail' ? (
               '出席状況詳細一覧'

@@ -10,7 +10,7 @@ const profile: NextPage = () => {
   return (
     <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>
       <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px] flex flex-col gap-4 px-4 py-2'>
-        <h1 className='text-2xl font-thin'>わたしのプロフィール</h1>
+        <h1 className='text-xl md:text-2xl font-thin'>わたしのプロフィール</h1>
         <section className='flex flex-col justify-center items-center md:justify-start md:items-start'>
           <small>COM Portal Xに登録されているプロフィール情報です。</small>
           {/* 学校名 */}

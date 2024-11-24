@@ -1,0 +1,1 @@
+INSERT INTO edu_oca.account VALUES (2104240029, 'OCA大阪デザイン&テクノロジー専門学校', '前田 力哉', 4, 'スーパーゲームＩＴ科', 'ホワイトハッカー専攻', '2104240029mr@edu.oca.ac.jp', 'xdc84Mrks', 'testFACE.png', 'testBARCODE.com', 'testQR.com');
