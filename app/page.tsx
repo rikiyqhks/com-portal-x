@@ -194,12 +194,14 @@ const Home: NextPage = () => {
               <p>お知らせはありません。</p>
             )}
           </div>
-          <Link
-            className='flex flex-row justify-end items-center text-sm font-bold hover:underline'
-            href='/notification'
-          >
-            お知らせ一覧へ
-          </Link>
+          <section className='flex flex-row justify-end items-center'>
+            <Link
+              className='text-xs font-semibold md:text-sm md:font-bold hover:underline'
+              href='/notification'
+            >
+              お知らせ一覧へ
+            </Link>
+          </section>
         </div>
       </section>
       {/* 出席率 */}
@@ -219,12 +221,14 @@ const Home: NextPage = () => {
             <p className='text-xl font-semibold md:text-3xl md:font-bold'>70.0%</p>
           </section>
           <hr className='my-5' />
-          <Link
-            className='flex flex-row justify-end items-center text-xs font-semibold md:text-sm md:font-bold hover:underline'
-            href='/attendance_rate_detail'
-          >
-            出席状況詳細一覧へ
-          </Link>
+          <section className='flex flex-row justify-end items-center'>
+            <Link
+              className='text-xs font-semibold md:text-sm md:font-bold hover:underline'
+              href='/attendance_rate_detail'
+            >
+              出席状況詳細一覧へ
+            </Link>
+          </section>
         </div>
       </section>
       {/* ITリテラシー理解度テスト受験状況 */}
