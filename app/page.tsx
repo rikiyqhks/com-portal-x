@@ -123,7 +123,7 @@ const Home: NextPage = () => {
           </Link>
           <Link
             className='w-24 h-24 flex flex-col justify-center items-center gap-3 hover:bg-slate-100 duration-200 border border-slate-200 rounded shadow p-1'
-            href='/'
+            href='/applications'
           >
             <Image
               src={Application}

@@ -68,6 +68,8 @@ const Subheader: NextPage = () => {
               '出席状況詳細一覧'
             ) : pathname === '/attendance_sheet' ? (
               '成績・出欠確認表'
+            ) : pathname === '/applications' ? (
+              '各種申請'
             ) : pathname === '/course_registration' ? (
               '履修登録'
             ) : pathname === '/survey' ? (

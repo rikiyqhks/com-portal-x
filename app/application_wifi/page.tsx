@@ -1,6 +1,7 @@
 'use client'
 
 import { NextPage } from 'next'
+import Link from 'next/link'
 
 /**
  * 校内WiFiの利用規約と申請状況のページを表示する
@@ -70,12 +71,12 @@ const Application_WiFi: NextPage = () => {
         </div>
         {/* ボタンの配置 */}
         <section className='flex flex-row justify-between items-center mx-5 md:mx-20'>
-          <button
+          <Link
             className='text-xs md:text-sm px-3 md:px-10 py-3 md:py-4 rounded-xl bg-slate-300 hover:bg-slate-300 border-2 border-2-slate-300 duration-200 shadow hover:shadow-md'
-            disabled
+            href='/'
           >
             キャンセル
-          </button>
+          </Link>
           <button
             className='text-xs md:text-sm px-3 md:px-10 py-3 md:py-4 rounded-xl bg-amber-400 hover:bg-amber-500 duration-200 shadow hover:shadow-md'
             onClick={() => alert('提出が完了しました。')}

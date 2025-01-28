@@ -40,7 +40,7 @@ const profile: NextPage = () => {
             <input
               className='w-[300px] md:w-[600px] border-b px-3 py-2 text-xs md:text-base text-gray-800 outline-none cursor-text'
               type='text'
-              value='前田 力哉'
+              value='山田 太郎'
               name='name'
               disabled
             />
@@ -104,7 +104,7 @@ const profile: NextPage = () => {
             <input
               className='w-[300px] md:w-[600px] border-b px-3 py-2 text-xs md:text-base text-gray-800 outline-none cursor-text'
               type='text'
-              value='2104240029mr@edu.oca.ac.jp'
+              value='0000000000mr@edu.oca.ac.jp'
               name='email'
               disabled
             />
