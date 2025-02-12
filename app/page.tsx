@@ -15,6 +15,7 @@ import Application from '@/public/application.svg'
 import Registration from '@/public/registration.svg'
 import Survey from '@/public/survey.svg'
 import Wifi from '@/public/wifi.svg'
+import Safety24 from '@/public/safety24.svg'
 import Barcode from '@/public/barcode.svg'
 
 /**
@@ -164,6 +165,19 @@ const Home: NextPage = () => {
               alt='校内Wi-Fi'
             />
             <p className='text-xs'>校内Wi-Fi</p>
+          </Link>
+          <Link
+            className='w-24 h-24 flex flex-col justify-center items-center gap-3 hover:bg-slate-100 duration-200 border border-slate-200 rounded shadow p-1'
+            href='https://jikeigroup.safetylink24.jp'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <Image
+              src={Safety24}
+              width={40}
+              alt='安否確認'
+            />
+            <p className='text-xs'>安否確認</p>
           </Link>
           <Link
             className='w-24 h-24 flex flex-col justify-center items-center gap-3 hover:bg-slate-100 duration-200 border border-slate-200 rounded shadow p-1'
