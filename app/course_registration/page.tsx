@@ -74,13 +74,13 @@ const courseSchedule: Schedule = {
  */
 const Course_Registration: NextPage = () => {
   // 履修科目を選択しているか状態管理する配列
-  const [selected, setSelected] = useState<boolean[]>(Array(10).fill(false))
+  const [selectedCourses, setSelectedCourses] = useState<{[key: string]: boolean}>({})
 
   const renderCourseCell = (course: Course | null, periodIndex: number, dayIndex: number) => {
     if (!course) return null
 
     const bgColor = course.type === 'required' ? 'bg-amber-100' : 'bg-sky-100'
-    const selectableIndex = `${periodIndex}-${dayIndex}`
+    const courseKey = `${periodIndex}-${dayIndex}-${course.name}` // ユニークなキーを生成
 
     return (
       <div className={`${bgColor} p-2 rounded h-full`}>
@@ -91,11 +91,12 @@ const Course_Registration: NextPage = () => {
           <label className='mt-2 flex items-center space-x-2 cursor-pointer'>
             <input
               type='checkbox'
-              checked={selected[parseInt(selectableIndex)]}
+              checked={selectedCourses[courseKey] || false}
               onChange={(e: ChangeEvent<HTMLInputElement>) => {
-                const newSelected = [...selected]
-                newSelected[parseInt(selectableIndex)] = e.target.checked
-                setSelected(newSelected)
+                setSelectedCourses(prev => ({
+                  ...prev,
+                  [courseKey]: e.target.checked
+                }))
               }}
               className='form-checkbox h-4 w-4 text-blue-600'
             />

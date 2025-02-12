@@ -32,7 +32,6 @@ type Courses = {
  * @returns 成績・出欠確認表
  */
 const Attendance_Sheet: NextPage = () => {
-
   // コースを状態管理する配列
   const [courses, setCourses] = useState<Course[]>()
   // 選択された年度を状態管理する変数（初期値は今年度）
@@ -45,8 +44,7 @@ const Attendance_Sheet: NextPage = () => {
   const [judges, setJudges] = useState<string[]>([])
 
   /**
-   * コースごとに履修単位数を計算して
-   * 合計を状態管理する変数に代入する
+   * コースごとに履修単位数を計算して合計を状態管理する変数に代入する
    */
   useEffect(() => {
     let temp = 0
@@ -57,9 +55,7 @@ const Attendance_Sheet: NextPage = () => {
   }, [courses])
 
   /**
-   * 選択されている年度もしくは学期が変更されると
-   * それに合致したデータを状態管理する配列に代入
-   * する
+   * 選択されている年度もしくは学期が変更されるとそれに合致したデータを状態管理する配列に代入する
    */ 
   useEffect(() => {
     dummyCourse.map((courses: Courses) => {
@@ -81,6 +77,9 @@ const Attendance_Sheet: NextPage = () => {
     })
   }, [selectedAcademicYear, selectedSemester])
 
+  /**
+   * 成績評価から合否を判定する
+   */
   const calcIsPass = (value: string) => {
     switch(value) {
       case 'A':
@@ -102,7 +101,6 @@ const Attendance_Sheet: NextPage = () => {
 
   /**
    * 年度を選択すると状態管理する変数に代入される
-   * @param e イベントハンドラー
    */
   const handleAcademicYearChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value
@@ -111,146 +109,157 @@ const Attendance_Sheet: NextPage = () => {
 
   /**
    * 学期を選択すると状態管理する変数に代入される
-   * @param e イベントハンドラー
    */
   const handleSemesterChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value
     setSelectedSemester(value)
   }
 
-  // メインコンテンツ
   return (
-    <main className='w-full h-auto flex flex-col justify-center items-center gap-5 py-12'>
-      <section className='flex flex-col justify-center items-center gap-4 px-4 py-2'>
-        <section className='max-w-[300px] w-[300px] md:max-w-[600px] md:w-[600px]
-          flex flex-col justify-center items-center md:justify-start md:items-start'>
-          <table className='w-full table-fixed text-[9px] md:text-xs text-center'>
-            <thead>
-              <tr className='bg-amber-400'>
-                <th className='w-20 px-5 py-1 md:w-40 md:px-7 md:py-3'>氏名</th>
-                <th className='w-20 px-5 py-1 md:w-28 md:px-7 md:py-3'>学籍番号</th>
-                <th className='w-32 px-5 py-1 md:w-24 md:px-7 md:py-3'>所属</th>
-                <th className='w-16 px-5 py-1 md:w-24 md:px-7 md:py-3'>学年</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className='bg-slate-100'>
-                <td className='px-3 py-1 md:px-7 md:py-3'>前田 力哉</td>
-                <td className='px-3 py-1 md:px-7 md:py-3'>2104240029</td>
-                <td className='px-3 py-1 md:px-7 md:py-3'>スーパーゲームＩＴ科 ホワイトハッカー専攻</td>
-                <td className='px-3 py-1 md:px-7 md:py-3'>4年</td>
-              </tr>
-            </tbody>
-          </table>
-          <table className='w-full table-fixed text-[9px] md:text-xs text-center'>
-            <thead>
-              <tr className='bg-amber-400'>
-                <th className='w-44 px-3 py-1 md:w-40 md:px-7 md:py-3'>年度</th>
-                <th className='w-44 px-3 py-1 md:w-28 md:px-7 md:py-3'>学期</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className='bg-slate-100'>
-                <td className='px-3 py-1 md:px-7 md:py-3'>
-                  <select
-                    className='border shadow px-8 py-3'
-                    onChange={handleAcademicYearChange}
-                    defaultValue={'2024'}
-                  >
-                    <option value='2025'>2025年度</option>
-                    <option value='2024'>2024年度</option>
-                    <option value='2023'>2023年度</option>
-                    <option value='2022'>2022年度</option>
-                    <option value='2021'>2021年度</option>
-                  </select>
-                </td>
-                <td className='px-3 py-1 md:px-7 md:py-3'>
-                  <select
-                    className='border shadow px-8 py-3'
-                    onChange={handleSemesterChange}
-                    defaultValue={'前期'}
-                  >
-                    <option value='前期'>前期</option>
-                    <option value='後期'>後期</option>
-                  </select>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <main className='min-h-screen w-full px-4 py-8 sm:px-6 lg:px-8'>
+      <div className='mx-auto max-w-7xl'>
+        {/* 学生情報テーブル */}
+        <section className='mb-8'>
+          <div className='overflow-x-auto rounded-lg shadow'>
+            <table className='min-w-full divide-y divide-gray-200'>
+              <thead>
+                <tr className='bg-amber-400'>
+                  <th className='px-4 py-3 text-[10px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>氏名</th>
+                  <th className='px-4 py-3 text-[10px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>学籍番号</th>
+                  <th className='px-4 py-3 text-[10px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>所属</th>
+                  <th className='px-4 py-3 text-[10px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>学年</th>
+                </tr>
+              </thead>
+              <tbody className='divide-y divide-gray-200 bg-white'>
+                <tr>
+                  <td className='whitespace-nowrap px-4 py-3 text-[10px] md:text-sm sm:px-6 lg:px-8'>山田 太郎</td>
+                  <td className='whitespace-nowrap px-4 py-3 text-[10px] md:text-sm sm:px-6 lg:px-8'>0000000000</td>
+                  <td className='px-4 py-3 text-[10px] md:text-sm sm:px-6 lg:px-8'>スーパーゲームＩＴ科 ホワイトハッカー専攻</td>
+                  <td className='whitespace-nowrap px-4 py-3 text-[10px] md:text-sm sm:px-6 lg:px-8'>4年</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
-        <section className='max-w-[300px] w-[300px] md:max-w-[1500px] md:w-[1500px]
-          flex flex-col overflow-x-scroll md:overflow-x-visible justify-start md:justify-center items-start md:items-center'>
-          <table className='w-full table-fixed text-[9px] md:text-xs text-center border'>
-            <caption className='text-start py-1'><b>この学期の取得単位 : </b>0.0単位</caption>
-            {/* 小数第一位まで表示するようにtoFixedメソッドを使用 */}
-            <caption className='text-start py-1'><b>この学期の履修単位 : </b>{academicCredits?.toFixed(1)}単位</caption>
-            <thead>
-              <tr className='bg-slate-100 border'>
-                <th className='w-12 px-3 py-1 md:w-16 border md:px-7 md:py-3'>授業名</th>
-                <th className='w-24 px-3 py-1 md:w-44 border md:px-7 md:py-3'>成績・出欠</th>
-                <th className='w-12 px-3 py-1 md:w-16 border md:px-7 md:py-3'></th>
-              </tr>
-            </thead>
-            <tbody>
-            {/* 条件に合致したコースをすべて表示 */}
-            {courses?.map((course: Course) => (
-                <tr className='border' key={course.subjectName}>
-                  <td className='bg-slate-300 px-3 py-3 md:py-5 font-bold'>
-                    <p>{course.subjectName}</p>
-                    <p>講師名: {course.instructor}</p>
-                    <p>単位数: {course.credits}</p>
-                  </td>
-                  <td className='px-7 border py-3'>
-                    <div className='flex flex-col md:flex-row justify-between items-center gap-3'>
-                      <section className='border border-sky-300'>
-                        <div className='w-16 md:w-60 h-4 md:h-9 flex justify-center items-center bg-sky-400 text-white'>
-                          <p>授業数</p>
-                        </div>
-                        <div className='w-16 md:w-60 h-4 md:h-9 flex justify-end items-center pr-2 md:pr-5'>
-                          <p><span className='md:text-lg font-bold md:mx-2'>{course.class}</span>コマ</p>
-                        </div>
-                      </section>
-                      <section className='border border-red-300'>
-                        <div className='w-16 md:w-60 h-4 md:h-9 flex justify-center items-center  bg-red-400 text-white'>
-                          <p>欠席数</p>
-                        </div>
-                        <div className='w-16 md:w-60 h-4 md:h-9 flex justify-end items-center pr-2 md:pr-5'>
-                          <p><span className='md:text-lg font-bold md:mx-2'>{course.absence}</span>回</p>
-                        </div>
-                      </section>
-                      <section className='border border-green-300'>
-                        <div className='w-16 md:w-60 h-4 md:h-9 flex justify-center items-center  bg-green-400 text-white'>
-                          <p>成績評価</p>
-                        </div>
-                        <div className='w-16 md:w-60 h-4 md:h-9 flex justify-end items-center pr-2 md:pr-5'>
-                          <p><span className='md:text-lg font-bold md:mx-2'>{course.gradeRating}</span>評価 (合格)</p>
-                        </div>
-                      </section>
-                    </div>
-                  </td>
-                  <td className='py-3'>
-                    <Link
-                      className='w-16 md:w-32 flex flex-row justify-center items-center gap-1 md:gap-2 text-[9px] md:text-xs
-                        mx-auto px-2 md:px-5 py-2 md:py-3 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 duration-200 shadow hover:shadow-md'
-                      href={`/attendance_sheet/${course.subjectID}`}
+
+        {/* 年度・学期選択 */}
+        <section className='mb-8'>
+          <div className='overflow-x-auto rounded-lg shadow'>
+            <table className='min-w-full divide-y divide-gray-200'>
+              <thead>
+                <tr className='bg-amber-400'>
+                  <th className='px-4 py-3 text-[10px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>年度</th>
+                  <th className='px-4 py-3 text-[10px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>学期</th>
+                </tr>
+              </thead>
+              <tbody className='divide-y divide-gray-200 bg-white'>
+                <tr>
+                  <td className='px-4 py-3 sm:px-6 lg:px-8'>
+                    <select
+                      className='w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 text-[10px] md:text-sm'
+                      onChange={handleAcademicYearChange}
+                      defaultValue='2024'
                     >
-                      <Image
-                        className='w-4 md:w-6'
-                        src={Detail}
-                        width={20}
-                        alt='詳細'
-                      />
-                      詳細
-                    </Link>
+                      <option value='2025'>2025年度</option>
+                      <option value='2024'>2024年度</option>
+                      <option value='2023'>2023年度</option>
+                      <option value='2022'>2022年度</option>
+                      <option value='2021'>2021年度</option>
+                    </select>
+                  </td>
+                  <td className='px-4 py-3 sm:px-6 lg:px-8'>
+                    <select
+                      className='w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 text-[10px] md:text-sm'
+                      onChange={handleSemesterChange}
+                      defaultValue='前期'
+                    >
+                      <option value='前期'>前期</option>
+                      <option value='後期'>後期</option>
+                    </select>
                   </td>
                 </tr>
-            ))}
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </section>
-      </section>
+
+        {/* 成績・出欠一覧 */}
+        <section>
+          <div className='overflow-x-auto rounded-lg shadow'>
+            <div className='mb-4 space-y-1 px-4 py-3 sm:px-6 lg:px-8'>
+              <p className='text-[10px] md:text-sm font-medium'>
+                <span className='font-bold'>この学期の取得単位: </span>0.0単位
+              </p>
+              <p className='text-[10px] md:text-sm font-medium'>
+                <span className='font-bold'>この学期の履修単位: </span>
+                {academicCredits?.toFixed(1)}単位
+              </p>
+            </div>
+            <table className='min-w-full divide-y divide-gray-200'>
+              <thead>
+                <tr className='bg-gray-50'>
+                  <th className='px-4 py-3 text-[9px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>授業名</th>
+                  <th className='px-4 py-3 text-[9px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'>成績・出欠</th>
+                  <th className='px-4 py-3 text-[9px] md:text-xs font-medium text-gray-900 sm:px-6 lg:px-8'></th>
+                </tr>
+              </thead>
+              <tbody className='divide-y divide-gray-200 bg-white'>
+                {courses?.map((course: Course) => (
+                  <tr key={course.subjectName}>
+                    <td className='bg-gray-50 px-4 py-4 sm:px-6 lg:px-8'>
+                      <div className='space-y-1'>
+                        <p className='font-bold text-[10px] md:text-sm'>{course.subjectName}</p>
+                        <p className='text-[10px] md:text-xs text-gray-600'>講師名: {course.instructor}</p>
+                        <p className='text-[10px] md:text-xs text-gray-600'>単位数: {course.credits}</p>
+                      </div>
+                    </td>
+                    <td className='px-4 py-4 sm:px-6 lg:px-8'>
+                      <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+                        <div className='overflow-hidden rounded-lg border border-sky-300'>
+                          <div className='bg-sky-400 px-3 py-2 text-[10px] md:text-xs text-white'>授業数</div>
+                          <div className='px-3 py-2 text-right'>
+                            <span className='text-[10px] md:text-sm font-bold'>{course.class}</span>
+                            <span className='text-[10px] md:text-xs'>コマ</span>
+                          </div>
+                        </div>
+                        <div className='overflow-hidden rounded-lg border border-red-300'>
+                          <div className='bg-red-400 px-3 py-2 text-[10px] md:text-xs text-white'>欠席数</div>
+                          <div className='px-3 py-2 text-right'>
+                            <span className='text-[10px] md:text-sm font-bold'>{course.absence}</span>
+                            <span className='text-[10px] md:text-xs'>回</span>
+                          </div>
+                        </div>
+                        <div className='overflow-hidden rounded-lg border border-green-300'>
+                          <div className='bg-green-400 px-3 py-2 text-[10px] md:text-xs text-white'>成績評価</div>
+                          <div className='px-3 py-2 text-right'>
+                            <span className='text-[10px] md:text-sm font-bold'>{course.gradeRating}</span>
+                            <span className='text-[10px] md:text-xs'>評価 (合格)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className='px-4 py-4 text-center sm:px-6 lg:px-8'>
+                      <Link
+                        href={`/attendance_sheet/${course.subjectID}`}
+                        className='inline-flex items-center rounded-lg bg-gray-50 px-3 py-2 text-[10px] md:text-xs font-medium text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2'
+                      >
+                        <Image
+                          className='mr-2 h-4 w-4'
+                          src={Detail}
+                          alt='詳細'
+                        />
+                        詳細
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
     </main>
   )
 }
 
-export default  Attendance_Sheet
+export default Attendance_Sheet
