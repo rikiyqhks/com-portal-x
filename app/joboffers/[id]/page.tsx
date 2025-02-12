@@ -10,7 +10,6 @@ export const generateStaticParams = async() => {
 }
 
 const JobDetail = ({ params }: { params: { id: string } }) => {
-  console.log(params)
   const job = jobs.find(j => j.id === params.id)
 
   if (!job) {
