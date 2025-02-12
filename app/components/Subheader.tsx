@@ -66,9 +66,9 @@ const Subheader: NextPage = () => {
               'お知らせ一覧'
             ) : pathname === '/attendance_rate_detail' ? (
               '出席状況詳細一覧'
+            ) : pathname === '/joboffers' ? (
+              '求人票一覧'
             ) : pathname === '/attendance_sheet' ? (
-              '成績・出欠確認表'
-            ) : pathname === '/attendance_sheet/1' ? (
               '成績・出欠確認表'
             ) : pathname === '/applications' ? (
               '各種申請'
